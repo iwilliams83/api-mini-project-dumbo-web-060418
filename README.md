@@ -1,19 +1,18 @@
 # API Mini Project Guidelines
 
+Today, we'll be building out a small Rails API with a parner! Remember to use pairing best practices as you go through the assignment. 
+
 ## Before you start coding...
 
-1. Map out your domain model and associations. Choose a many-to-many relationship - two models with one join model.
-2. Create your new Rails API application without the default test framework. 
-3. Add the gems you'll need (ActiveModelSerializer, Rack Cors, and Rspec). 
-4. Generate your spec directory for rspec.
+1. Map out your domain model and associations. Choose a belongs_to/has_many or a many-to-many relationship with two models with one join model.
 
+## Getting Started
+1. Create your new Rails API application without the default test framework. `rails new my-pokemon-api --api -T` 
+2. Add the gems you'll need (ActiveModelSerializer, Rack Cors). 
+3. 
 
-## TDD in Action 
-1. For this project, write your specs first, then get them passing. Start with your model tests. Try [ping pong pairing](http://c2.com/cgi/wiki?PairProgrammingPingPongPattern) - to mix up the driver and navigator.
-2. Once your model tests are done, implement your request specs and get those passing.
-3. Your goal is to implement CRUD actions for each of your main resources, i.e. cats and hobbies.
+## Project Requirements
 
-## Other Stuff
-
-+ Your routes should be namespaced to allow for API versioning, i.e. `/api/v1/cool-stuff`
-+ TDD can be hard to learn, but it's worth it. Stick with this approach for this project - go slow, lean on Google, books, the lecture videos, the instructors, and each other for support. 
+1. Build out full CRUD actions for one of your resources. 
+2. Requests should be namespaced under `v1`. For example, `/api/v1/pokemon` should render JSON data off all the Pokemon.
+3. Use serializers to only send back reasonable data. For example, `created_at` and `updated_at` should probably not be included. 
