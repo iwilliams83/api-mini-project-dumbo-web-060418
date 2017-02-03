@@ -9,7 +9,7 @@ Today, we'll be building out a small Rails API with a parner! Remember to use pa
 ## Getting Started
 1. Create your new Rails API application without the default test framework. `rails new my-pokemon-api --api -T` 
 2. Add the gems you'll need (ActiveModelSerializer, Rack Cors). 
-3. 
+3. Setup you app to accept requests from other places using CORS by un-commenting the file in `config/initializers/cors.rb` 
 
 ## Project Requirements
 
