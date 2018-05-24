@@ -1,6 +1,6 @@
 # API Mini Project Guidelines
 
-Today, we'll be building out a small Rails API with a parner! Remember to use pairing best practices as you go through the assignment. 
+Today, we'll be building out a small Rails API with a partner! Remember to use pairing best practices as you go through the assignment. 
 
 ## Before you start coding...
 
